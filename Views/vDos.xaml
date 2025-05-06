@@ -3,10 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcorreaT3A.Views.vDos"
              Title="vDos">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20">
+
+        <Label x:Name="NombreLabel" />
+        <Label x:Name="IdentificacionLabel" />
+        <Label x:Name="FechaLabel" />
+        <Label x:Name="CorreoLabel" />
+        <Label x:Name="SalarioLabel" />
+        <Label x:Name="AporteIessLabel" FontAttributes="Bold" />
+
+        <Button Text="Exportar"
+                Background="ForestGreen"
+                Clicked="Button_Clicked"/>
+
     </VerticalStackLayout>
 </ContentPage>
